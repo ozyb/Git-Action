@@ -17,9 +17,8 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 
-git clone https://gitee.com/koode/kooder.git
-cd kooder
+git clone https://gitee.com/koode/kooder.git  ./workdir
+cd ./workdir
 pwd
-
 ls
 echo $GITHUB_WORKSPACE
