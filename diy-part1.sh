@@ -17,8 +17,8 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 
-git clone https://github.com/ozyb/vh.git  ./workdir
-cd ./workdir
+git clone https://github.com/ozyb/vh.git  .
+
 pwd
 ls
 echo $GITHUB_WORKSPACE
