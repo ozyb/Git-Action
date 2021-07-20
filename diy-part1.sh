@@ -19,3 +19,6 @@
 
 git clone https://gitee.com/koode/kooder.git
 cd kooder
+pwd
+
+ls
