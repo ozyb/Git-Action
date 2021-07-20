@@ -22,3 +22,4 @@ cd kooder
 pwd
 
 ls
+echo $GITHUB_WORKSPACE
