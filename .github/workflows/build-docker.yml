@@ -72,7 +72,6 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }} # 用户名
         password: ${{ secrets.DOCKER_PASSWORD }} # 密码
         registry: registry.cn-guangzhou.aliyuncs.com # 阿里巴巴的 Docker Hub
-        dockerfile: Dockerfile # 指定 Dockerfile 的位置
         tag_names: true # 是否将 release 的 tag 作为 docker image 的 tag
 
     - name: Upload firmware to release
