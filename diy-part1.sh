@@ -18,7 +18,7 @@
 
 
 git clone https://github.com/ozyb/vh.git ./workdir
-cp ./workdir ./
+cp -r ./workdir ./
 pwd
 ls
 echo $GITHUB_WORKSPACE
