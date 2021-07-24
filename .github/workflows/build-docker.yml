@@ -68,7 +68,7 @@ jobs:
         
     - name: Set tag
       run: |
-        echo "FILE_TAG=_$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
+        echo "FILE_TAG=$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
 
     - name: Publish Docker
       uses: LucienShui/Publish-Docker-Github-Action@2.7.1
@@ -79,7 +79,7 @@ jobs:
         registry: registry.cn-guangzhou.aliyuncs.com # 阿里巴巴的 Docker Hub
         dockerfile: Dockerfile
         workdir: ./workdir
-        tag_names: "latest,${{ env.FILE_TAG }}"
+        tags: "latest,${{ env.FILE_TAG }}"
         
 
     - name: Upload firmware to release
