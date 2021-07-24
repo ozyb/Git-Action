@@ -19,7 +19,7 @@
 
 git clone https://github.com/ozyb/vh.git ./workdir
 cd ./workdir
-echo $GITHUB_ENV
+env.NAME = "v2rayo"
 #cp -dpR ./workdir/* ./
 pwd
 ls
