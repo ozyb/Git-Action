@@ -79,7 +79,7 @@ jobs:
         registry: registry.cn-guangzhou.aliyuncs.com # 阿里巴巴的 Docker Hub
         dockerfile: Dockerfile
         workdir: ./workdir
-        tags: "latest,${{ env.FILE_TAG }}"
+        tag_names: "latest,${{ env.FILE_TAG }}"
         
 
     - name: Upload firmware to release
