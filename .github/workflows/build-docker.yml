@@ -71,7 +71,7 @@ jobs:
         echo "FILE_TAG=$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
 
     - name: Publish Docker
-      uses: LucienShui/Publish-Docker-Github-Action@2.7.1
+      uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: registry.cn-guangzhou.aliyuncs.com/dockerbz/kooder # docker image 的名字
         username: ${{ secrets.DOCKER_USERNAME }} # 用户名
