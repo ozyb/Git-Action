@@ -24,8 +24,8 @@ env:
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: false
-  UPLOAD_WETRANSFER: false
+  NAMESPACE: dockerbz
+  NAME: docker
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
 
@@ -73,13 +73,13 @@ jobs:
     - name: Publish Docker
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: registry.cn-guangzhou.aliyuncs.com/dockerbz/kooder # docker image 的名字
+        name: registry.cn-guangzhou.aliyuncs.com/${{env.NAMESPACE}}/${{env.NAME}} # docker image 的名字
         username: ${{ secrets.DOCKER_USERNAME }} # 用户名
         password: ${{ secrets.DOCKER_PASSWORD }} # 密码
         registry: registry.cn-guangzhou.aliyuncs.com # 阿里巴巴的 Docker Hub
         dockerfile: Dockerfile
         workdir: ./workdir
-        tags: "latest,${{ env.FILE_TAG }}"
+        tags: "${{ env.FILE_TAG }}"
         
 
     - name: Upload firmware to release
