@@ -18,6 +18,7 @@
 
 
 git clone https://gitee.com/koode/kooder.git ./workdir
+echo $GITHUB_ENV
 #cp -dpR ./workdir/* ./
 pwd
 ls
