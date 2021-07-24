@@ -21,7 +21,7 @@ git clone https://github.com/ozyb/vh.git ./workdir
 cd ./workdir
 
 #docker 名称
-echo "NAME = "v2rayo"" >> $GITHUB_ENV
+echo "NAME=v2rayo" >> $GITHUB_ENV
 #cp -dpR ./workdir/* ./
 pwd
 ls
